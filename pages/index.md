@@ -1,6 +1,9 @@
 ---
-layout: Hone
+layout: page
+home-title: Hone
+description: 空白的首页
 permalink: /index.html
+lang: "zh-Hans"
 ---
 
 # 自我介绍
