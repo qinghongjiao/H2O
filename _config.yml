@@ -14,7 +14,7 @@ github:
   repository: qinghongjiao.github.io
 
 # Theme
-# theme: jekyll-theme-h2o-ac
+theme: jekyll-theme-h2o-ac
 
 # Gray
 gray: false
