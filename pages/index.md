@@ -1,9 +1,9 @@
 ---
 layout: page
-home-title: Welcome to zhonger's blog!
-description: Writing, writing, writing ...
-permalink: /
-langs: ["zh-Hans", "en"]
+home-title: 关于!
+description: about...
+permalink: /about.html
+langs: ["zh-Hans"]
 lang: "zh-Hans"
 ---
 
