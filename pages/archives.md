@@ -1,6 +1,6 @@
 ---
 layout: archives
-home-title: Welcome to zhonger's blog!
+home-title: archives
 description: Writing, writing, writing ...
 permalink: /archives.html
 cover: 'https://i.lisz.top/cover/DGGmJW.webp'
