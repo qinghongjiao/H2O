@@ -1,6 +1,6 @@
 ---
 layout: categories
-home-title: Welcome to zhonger's blog!
+home-title: categories
 description: Writing, writing, writing ...
 permalink: /categories.html
 cover: 'https://i.lisz.top/cover/DGGmJW.webp'
