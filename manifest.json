@@ -2,7 +2,7 @@
   "lang": "",
   "dir": "",
   "name": "青红椒",
-  "short_name": "",
+  "short_name": "lisz",
   "icons": [
     {
       "src": "/assets/img/touch/android-chrome-192x192.png",
@@ -27,8 +27,8 @@
       "purpose": "maskable"
     }
   ], 
-  "theme_color": "",
-  "background_color": "",
+  "theme_color": "#81BBFF",
+  "background_color": "#81BBFF",
   "start_url": "/",
   "display": "standalone",
   "orientation": "natural"
