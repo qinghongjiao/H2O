@@ -1,40 +1,38 @@
 <!DOCTYPE html>
 
-<html lang="">
+<html lang="zh-Hans">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MathJax Test - </title>
-    <meta name="author"  content="">
-    <meta name="description" content="MathJax Test">
-    <meta name="keywords"  content="mathjax">
+    <title>Hello Jekyll - Mr Li</title>
+    <meta name="author"  content="zhonger">
+    <meta name="description" content="Hello Jekyll">
+    <meta name="keywords"  content="jekyll">
     <!-- Open Graph -->
-    <meta property="og:title" content="MathJax Test - ">
+    <meta property="og:title" content="Hello Jekyll - Mr Li">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="/test/2017/07/30/mathjax-test.html">
+    <meta property="og:url" content="https://h2o-ac.pages.dev/hello-jekyll.html">
     <meta property="og:baseurl" content="">
-    <meta property="og:description" content="">
-    <meta property="og:site_name" content="">
-    <meta property="og:gray" content="">
+    <meta property="og:description" content="个人的一个技术博客站点，主要用于记录个人在学习过程中遇到的技术问题及解决方法、技术实验，以及一些比较有趣的事情。">
+    <meta property="og:site_name" content="Mr Li">
+    <meta property="og:gray" content="false">
     
-    <meta property="og:previous_url" content="/tech/2021/12/22/new-theme-h2o-ac.html">
+    <meta property="og:previous_url" content="/tech/new-theme-h2o.html">
     
     
-    <meta property="og:next_url" content="/tech/2017/04/18/new-theme-h2o.html">
+    <meta property="post-date-format" content="0">
     
-    <meta property="post-date-format" content="">
-    
-    <meta property="post-date" content="2017年7月30日 00:00:00 +0000" />
+    <meta property="post-date" content="2017-04-18 00:00:00 +0000" />
     
     
     
-    <meta name="theme-color" content="" />
+    <meta name="theme-color" content="#81BBFF" />
     <link rel="manifest" href="/manifest.json" />
     <link rel="apple-touch-icon" href="/assets/img/touch/apple-touch-icon.png"/>
-    <link rel="Shortcut Icon" href="">
-    <link rel="icon" href="" type="image/x-icon" />
-    <link rel="bookmark" href="" type="image/x-icon" />
+    <link rel="Shortcut Icon" href="/favicon.ico">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="bookmark" href="/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-screen-webfont@1.1.0/style.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@5.2.0/github-markdown-light.min.css">
@@ -42,8 +40,10 @@
     
     
     
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prism-themes@1.9.0/themes/prism-.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prism-themes@1.9.0/themes/prism-one-light.min.css" />
     
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.28.0/plugins/line-numbers/prism-line-numbers.min.css">
     
     <link rel="stylesheet" href="/assets/css/app.min.css">
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.min.css" />
@@ -53,7 +53,7 @@
 
 
 
-<body ontouchstart="">
+<body class="line-numbers" ontouchstart="">
 
 
 
@@ -62,15 +62,15 @@
   <div class="alert-danger" role="alert">你的浏览器实在太太太旧了，放学别走，升级完浏览器再说！<a target="_blank" class="alert-link" href="http://browsehappy.com">立即升级</a></div>
   <![endif]-->
   
-  <div id="all" class="post" data-theme="">
+  <div id="all" class="post" data-theme="default">
   
     <div class="alert-tip" id="no-previous">
-      
+      已经是最新一篇文章了！
     </div>
     <div class="alert-tip" id="no-next">
-      
+      已经是最后一篇文章了！
     </div>
-    <input id="nm-switch" type="hidden" value=""> <header class="g-header" data-theme="">
+    <input id="nm-switch" type="hidden" value="false"> <header class="g-header" data-theme="default">
     <div class="g-logo">
       <a href="/" aria-label="logo"></a>
     </div>
@@ -89,6 +89,53 @@
     <nav class="g-nav">
         <ul>
             
+                
+                <li>
+                    <a href="/" aria-label="home">
+                        home
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a href="/blog/index.html" aria-label="blog">
+                        blog
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a href="/archives.html" aria-label="archives">
+                        archives
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a href="/tags.html" aria-label="tags">
+                        tags
+                    </a>
+                </li>
+                
+            
+                
+                <li class="dropdown">
+                    <a class="dropdown-toggle"> about </a>
+                    <ul class="dropdown-menu">
+                    
+                        <li>
+                            <a href="/feed.xml" aria-label="RSS">
+                                RSS
+                            </a>
+                        </li>
+                    
+                    </ul> 
+                </li>
+                
+            
             <li class="mode">
                 <svg class="icon day" aria-hidden="true">
                     <use xlink:href="#icon-day"></use>
@@ -103,32 +150,32 @@
 
 
     <header
-      class="g-banner post-header post-pattern- bgcolor- post-no-cover"
-      data-theme=""
+      class="g-banner post-header post-pattern-circuitBoard bgcolor-default post-no-cover"
+      data-theme="default"
     >
       <div class="post-wrapper">
         <div class="post-tags">
           
             
-              <a href="/tags.html#mathjax" class="post-tag">mathjax</a>
+              <a href="/tags.html#jekyll" class="post-tag">jekyll</a>
             
           
         </div>
-        <h1>MathJax Test</h1>
+        <h1>Hello Jekyll</h1>
         <div class="post-meta">
           <span class="post-meta-item">
             <svg class="icon" aria-hidden="true">
               <use xlink:href="#icon-user"></use>
             </svg>
-            zhonger
+            Jekyll
           </span>
-          <time class="post-meta-item" datetime="17-07-30">
+          <time class="post-meta-item" datetime="17-04-18">
             <svg class="icon" aria-hidden="true">
               <use xlink:href="#icon-calendar"></use>
             </svg>
             <span class="create-at"></span>
           </time>
-          <time class="post-meta-item" datetime="17-07-30">
+          <time class="post-meta-item" datetime="17-04-18">
             <svg class="icon" aria-hidden="true">
               <use xlink:href="#icon-update"></use>
             </svg>
@@ -139,14 +186,21 @@
                 <use xlink:href="#icon-words"></use>
               </svg>
               
-                378  
+              本文总共  941  字
             </span>
             <span class="post-meta-item">
               <svg class="icon time" aria-hidden="true">
                 <use xlink:href="#icon-time"></use>
               </svg>
-               2 
+              阅读全文大约需要 3 分钟
             </span>
+            
+              <span class="post-meta-item">
+                <svg class="icon pv" aria-hidden="true">
+                  <use xlink:href="#icon-pv"></use>
+                </svg>
+                本文总阅读量 <span id="busuanzi_value_page_pv"></span> 次
+              </span>
             
             
         </div>
@@ -155,91 +209,93 @@
     </header>
     <div class="post-content visible">
       
-      <h2 class="post-subtitle">Support MathJax</h2>
-      
 
       
       
-        <article class="markdown-body">
-          
-          <p>mathjax in markdown :)</p>
-
-<p><strong>这是一个不<code class="language-plaintext highlighter-rouge">align</code>的公式</strong>：</p>
-
-\[\forall \alpha \in A, \quad a \cdot b = 0\]
-
-<p><strong>这是一个<code class="language-plaintext highlighter-rouge">align</code>的公式</strong>：</p>
-
-\[\begin{align}
-    \Phi(0,x) = \max_{u \in \mathcal{D}} \bigg[
-        \mathbb{E} &amp; \Phi\left(1, 
-        x + \int_0^1 \sigma^2(s) \, \zeta(s) \, u_s \, ds
-        + \int_0^1 \sigma(s) \, dW_s
-    \right) \\
-        &amp;- \frac{1}{2} \int_0^1 \sigma^2(s) \, \zeta(s) \,
-        \mathbb{E} u_s^2  \, ds
-    \bigg].
-\end{align}\]
-
-<p><strong>注意：</strong>公式块要想有较好的显示效果，必须在公式块标记符<code class="language-plaintext highlighter-rouge">$$</code><strong>前后</strong>留有空行，否则公式将不能正常居中。行内公式无此问题。</p>
-
-          <div class="post-copyright">
-            
-            <p>
-              <span>：</span>
+      <div class="container">  
+        <div class="contents">
+          <article class="markdown-body post">
               
-              <a href="" class="cplink"></a>
+            <blockquote>
+  <p>Transform your plain text into static websites and blogs.</p>
+</blockquote>
+
+<h3 id="welcome">Welcome</h3>
+
+<p>This site aims to be a comprehensive guide to Jekyll. We’ll cover topics such as getting your site up and running, creating and managing your content, customizing the way your site works and looks, deploying to various environments, and give you some advice on participating in the future development of Jekyll itself.</p>
+
+<h3 id="so-what-is-jekyll-exactlypermalink">So what is Jekyll, exactly?Permalink</h3>
+
+<p>Jekyll is a simple, blog-aware, static site generator. It takes a template directory containing raw text files in various formats, runs it through a converter (like <a href="https://daringfireball.net/projects/markdown/" rel="nofollow" target="_blank" class="extlinks">Markdown</a>) and our <a href="https://github.com/Shopify/liquid/wiki" rel="nofollow" target="_blank" class="extlinks">Liquid</a> renderer, and spits out a complete, ready-to-publish static website suitable for serving with your favorite web server. Jekyll also happens to be the engine behind GitHub Pages, which means you can use Jekyll to host your project’s page, blog, or website from GitHub’s servers for free.</p>
+
+<h3 id="helpful-hintspermalink">Helpful HintsPermalink</h3>
+
+<p>Throughout this guide there are a number of small-but-handy pieces of information that can make using Jekyll easier, more interesting, and less hazardous. Here’s what to look out for.</p>
+
+<h3 id="video-test">Video Test</h3>
+
+<iframe type="text/html" width="100%" height="385" src="https://www.youtube.com/embed/gfmjMWjn-Xg" frameborder="0"></iframe>
+
+            <div class="post-copyright">
+              <p>
+                <span>版权声明：</span>
+                如无特别声明，本文版权归
+                <a href="https://h2o-ac.pages.dev" class="cplink">Mr Li</a>
+                所有，转载请注明本文链接。 
+              </p>
               
-            </p>
-            
-            <p><span>：</span>《 MathJax Test 》</p>
-            <p><span>：</span><a href="/test/2017/07/30/mathjax-test.html" class="cplink">/test/2017/07/30/mathjax-test.html</a></p>
-            <p class="tips"> <span></span> </p>
-          </div>
-        </article>
+                <p> 
+                  （采用 
+                  <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" class="extlinks">CC BY-NC-SA 4.0</a> 
+                  许可协议进行授权）
+                </p>
+              
+              <p><span>本文标题：</span>《 Hello Jekyll 》</p>
+              <p><span>本文链接：</span><a href="https://h2o-ac.pages.dev/hello-jekyll.html" class="cplink">https://h2o-ac.pages.dev/hello-jekyll.html</a></p>
+              <p class="tips">本文最后一次更新为 <span></span> 天前，文章中的某些内容可能已过时！</p>
+            </div>
+          </article>
+        </div>   
+        <div class="table-of-contents">
+          <h2>目录</h2>
+          <ul><li><a onclick="scrollToAdjust('welcome')">Welcome</a></li><li><a onclick="scrollToAdjust('so-what-is-jekyll,-exactly?permalink')">So what is Jekyll, exactly?Permalink</a></li><li><a onclick="scrollToAdjust('helpful-hintspermalink')">Helpful HintsPermalink</a></li><li><a onclick="scrollToAdjust('video-test')">Video Test</a></li></ul>
+        </div>
+      </div>
       
 
+      
+      <div class="social-share-wrapper">
+        <div class="social-share"></div>
+      </div>
       
     </div>
 
     <section class="author-detail">
       <section class="post-footer-item author-card">
         <div class="avatar">
-          <img src="" alt="">
+          <img src="/assets/img/profile.webp" alt="">
         </div>
-        <div class="author-name" rel="author"></div>
+        <div class="author-name" rel="author">zhonger</div>
         <div class="bio">
-          <p></p>
+          <p>全栈开发者，热爱前端、运维和架构设计</p>
         </div>
         
       </section>
       <section class="post-footer-item read-next">
         
         <div class="read-next-item">
-          <a href="/tech/2021/12/22/new-theme-h2o-ac.html" class="read-next-link" aria-label="H2O-ac theme for Jekyll"></a>
+          <a href="/tech/new-theme-h2o.html" class="read-next-link" aria-label="H2O theme for Jekyll"></a>
           <section>
-            <span>H2O-ac theme for Jekyll</span>
-            <p>前言</p>
+            <span>H2O theme for Jekyll</span>
+            <p>正如我在微博上所说的，使用Jekyll半年以来一直没有令我满意的主题模板，所以开始计划自己写一套好看又好用的主题模...</p>
           </section>
           
           <div class="filter"></div>
-          <img src="https://images.unsplash.com/photo-1529322365446-6efd62aed02e?w=1600&q=900" alt="">
+          <img src="https://images.unsplash.com/photo-1485470733090-0aae1788d5af" alt="">
           
       </div>
         
 
-        
-        <div class="read-next-item">
-          <a href="/tech/2017/04/18/new-theme-h2o.html" class="read-next-link" aria-label="H2O theme for Jekyll"></a>
-            <section>
-              <span>H2O theme for Jekyll</span>
-              <p>正如我在微博上所说的，使用Jekyll半年以来一直没有令我满意的主题模板，所以开始计划自己写一套好看又好用的主题模...</p>
-            </section>
-            
-            <div class="filter"></div>
-            <img src="https://images.unsplash.com/photo-1485470733090-0aae1788d5af" alt="">
-            
-        </div>
         
       </section>
       
@@ -256,18 +312,29 @@
   <div class="g-container">
     <div class="g-left">
       <section class="links">
-        
-          
+        本站由 <a href="//jekyllrb.com" target="_blank" class="extlinks">Jekyll</a> 和 (基于 <a href="https://github.com/kaeyleo/jekyll-theme-H2O" target="_blank" class="extlinks">H2O</a> 的) <a href="https://github.com/zhonger/jekyll-theme-H2O-ac" target="_blank" class="extlinks">H2O-ac</a> 强力驱动
+         (<a href="https://github.com/zhonger/jekyll-theme-H2O-ac/releases/tag/v.1.2.1" target="_blank" class="extlinks">v1.2.1</a>)  
         
       </section>
-      <section class="links"> ©
+      <section class="links">Mr Li ©
         
         
-          
+          2015
           -
         
         2023
         
+          <a href="https://beian.miit.gov.cn/" target="_blank" class="extlinks">沪ICP备xxxxxxxx号</a>
+        
+      </section>
+      
+      <section>
+        <span id="busuanzi_container_site_pv">
+          👁️ 总浏览量 <span id="busuanzi_value_site_pv"></span> <b>·</b>
+        </span>
+        <span id="busuanzi_container_site_uv">
+          👤 总访问量 <span id="busuanzi_value_site_uv"></span>
+        </span>
       </section>
       
       <section>
@@ -282,9 +349,9 @@
   </div>
 </footer>
 <div class="cookie-tip">
-   「 <a href=""></a> 」
+   为了提升本站的使用体验和必要功能的正常使用，本站会使用本地 Cookie。详细请查看「 <a href="/tos.html">本站使用条款</a> 」了解更多。
 
-  <button id="accept-tos"></button>
+  <button id="accept-tos">同意</button>
 </div>
 <button id="list" aria-label="Scroll back to top" class="mobile-list" type="button">
   <svg class="icon list day" aria-hidden="true">
@@ -311,12 +378,36 @@
 
 
     
+    <div class="modal">
+        <div class="modal-content">
+          <header>
+            <span class="close">&times;</span>
+          </header>
+          <div class="container"></div>
+        </div>
+    </div>
+    
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/social-share.js@1.0.16/dist/js/social-share.min.js"></script>
   <script>
     socialShare('.social-share', {
       sites: [
+        
+          'wechat'
+          ,
+          
+        
+          'weibo'
+          ,
+          
+        
+          'douban'
+          ,
+          
+        
+          'twitter'
+          
         
       ],
       wechatQrcodeTitle: "分享到微信朋友圈",
@@ -414,7 +505,7 @@
 
           $(".post time span.create-at").html(local_post_date["date"]);
 
-          fetch("https://api.github.com/repos///commits?path=_posts/2017-07-30-mathjax-test.md")
+          fetch("https://api.github.com/repos/zhonger/jekyll-theme-H2O-ac/commits?path=_posts/2017-04-18-hello-jekyll.md")
           .then((response) => {
             return response.json();
           })
@@ -471,6 +562,8 @@
   
   
   
+<script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
   <script>
     if ("serviceWorker" in navigator) {
         if (navigator.serviceWorker.controller) {
@@ -503,7 +596,32 @@ refer to:
  - http://docs.mathjax.org/en/latest/options/index.html
 -->
 
+	<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+		jax: ["input/TeX", "output/HTML-CSS"],
+		tex2jax: {
+			inlineMath: [ ["$", "$"] ],
+			displayMath: [ ["$$", "$$"] ],
+			skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+		},
+		"HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"] }
+      });
+    </script>
+
    
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@9.1.6/dist/mermaid.min.js"></script>
+    <script>
+        $(document).ready(function (){
+            mermaid.initialize({
+                startOnLoad:true,
+                theme: "default",
+            });
+            mermaid.init(undefined, $('.mermaid2'));
+        });
+    </script>
+ 
   
  
 </body>

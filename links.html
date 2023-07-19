@@ -1,29 +1,29 @@
 
 <!DOCTYPE html>
-<html lang="">
+<html lang="zh-Hans">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-    <meta name="author"  content="">
-    <meta name="description" content="">
-    <meta name="keywords"  content="">
+    <title>Mr Li</title>
+    <meta name="author"  content="zhonger">
+    <meta name="description" content="个人的一个技术博客站点，主要用于记录个人在学习过程中遇到的技术问题及解决方法、技术实验，以及一些比较有趣的事情。">
+    <meta name="keywords"  content="zhonger，zhonger的博客，nodejs，kvm, 机器学习">
     <!-- Open Graph -->
-    <meta property="og:title" content="">
+    <meta property="og:title" content="Mr Li">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="/links">
+    <meta property="og:url" content="https://h2o-ac.pages.dev/links">
     <meta property="og:baseurl" content="">
-    <meta property="og:description" content="">
-    <meta property="og:site_name" content="">
-    <meta property="og:gray" content="">
+    <meta property="og:description" content="个人的一个技术博客站点，主要用于记录个人在学习过程中遇到的技术问题及解决方法、技术实验，以及一些比较有趣的事情。">
+    <meta property="og:site_name" content="Mr Li">
+    <meta property="og:gray" content="false">
     
     
-    <meta name="theme-color" content="" />
+    <meta name="theme-color" content="#81BBFF" />
     <link rel="manifest" href="/manifest.json" />
     <link rel="apple-touch-icon" href="/assets/img/touch/apple-touch-icon.png" />
-    <link rel="Shortcut Icon" href="">
-    <link rel="icon" href="" type="image/x-icon" />
-    <link rel="bookmark" href="" type="image/x-icon" />
+    <link rel="Shortcut Icon" href="/favicon.ico">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="bookmark" href="/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.min.css" async>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-screen-webfont@1.1.0/style.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@5.2.0/github-markdown-light.min.css">
@@ -31,8 +31,10 @@
     
     
     
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prism-themes@1.9.0/themes/prism-.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prism-themes@1.9.0/themes/prism-one-light.min.css" />
     
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.28.0/plugins/line-numbers/prism-line-numbers.min.css">
     
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@waline/client/dist/waline.css" />
     <link rel="stylesheet" href="/assets/css/app.min.css">
@@ -41,17 +43,17 @@
 
 
 
-<body ontouchstart="">
+<body class="line-numbers" ontouchstart="">
 
     <!--[if lt IE 10]>
     <div class="alert-danger" role="alert">你的浏览器实在太太太旧了，放学别走，升级完浏览器再说！<a target="_blank" class="alert-link" href="http://browsehappy.com">立即升级</a></div>
     <![endif]-->
     
-    <div id="all" data-theme="">
+    <div id="all" data-theme="default">
     
-      <input id="nm-switch" type="hidden" value="">
+      <input id="nm-switch" type="hidden" value="false">
       <div class="visible">
-        <header class="g-header" data-theme="">
+        <header class="g-header" data-theme="default">
     <div class="g-logo">
       <a href="/" aria-label="logo"></a>
     </div>
@@ -70,6 +72,53 @@
     <nav class="g-nav">
         <ul>
             
+                
+                <li>
+                    <a href="/" aria-label="home">
+                        home
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a href="/blog/index.html" aria-label="blog">
+                        blog
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a href="/archives.html" aria-label="archives">
+                        archives
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a href="/tags.html" aria-label="tags">
+                        tags
+                    </a>
+                </li>
+                
+            
+                
+                <li class="dropdown">
+                    <a class="dropdown-toggle"> about </a>
+                    <ul class="dropdown-menu">
+                    
+                        <li>
+                            <a href="/feed.xml" aria-label="RSS">
+                                RSS
+                            </a>
+                        </li>
+                    
+                    </ul> 
+                </li>
+                
+            
             <li class="mode">
                 <svg class="icon day" aria-hidden="true">
                     <use xlink:href="#icon-day"></use>
@@ -85,8 +134,8 @@
 
 
 <div
-    class="g-banner home-banner banner-theme-"
-    data-theme=""
+    class="g-banner home-banner banner-theme-default"
+    data-theme="default"
     style=""
 >
     <h2>H2O-ac theme for Jekyll</h2>
@@ -105,11 +154,10 @@
 <div class="friends">
     <h2>Links</h2>
     
-    <a target="_blank" href="https://github.com" title="Github" class="friendurl">
+    <a target="_blank" href="https://github.com" title="Github" class="friendurl" rel="nofollow">
         <div class="frienddiv">
             <div class="frienddivleft">
-                <img class="myfriend" src="https://cdn-icons-png.flaticon.com/512/1051/1051326.png" onerror="this.src='https://cdn-icons-png.flaticon.com/512/2091/2091464.png'; this.removeAttribute('onerror'); this.removeAttribute('onload');"
-                onload="this.removeAttribute('onerror'); this.removeAttribute('onload');">
+                <img class="myfriend" src="https://cdn-icons-png.flaticon.com/512/1051/1051326.png" onerror="this.src='https://cdn-icons-png.flaticon.com/512/2091/2091464.png'; this.removeAttribute('onerror'); this.removeAttribute('onload');" onload="this.removeAttribute('onerror'); this.removeAttribute('onload');">
             </div>
             <div class="frienddivright">
                 <div class="friendname">Github</div>
@@ -118,11 +166,10 @@
         </div>
     </a>
     
-    <a target="_blank" href="https://cloudflare.com" title="Cloudflare" class="friendurl">
+    <a target="_blank" href="https://cloudflare.com" title="Cloudflare" class="friendurl" rel="nofollow">
         <div class="frienddiv">
             <div class="frienddivleft">
-                <img class="myfriend" src="https://cdn-icons-png.flaticon.com/512/5969/5969044.png" onerror="this.src='https://cdn-icons-png.flaticon.com/512/2091/2091464.png'; this.removeAttribute('onerror'); this.removeAttribute('onload');"
-                onload="this.removeAttribute('onerror'); this.removeAttribute('onload');">
+                <img class="myfriend" src="https://cdn-icons-png.flaticon.com/512/5969/5969044.png" onerror="this.src='https://cdn-icons-png.flaticon.com/512/2091/2091464.png'; this.removeAttribute('onerror'); this.removeAttribute('onload');" onload="this.removeAttribute('onerror'); this.removeAttribute('onload');">
             </div>
             <div class="frienddivright">
                 <div class="friendname">Cloudflare</div>
@@ -131,11 +178,10 @@
         </div>
     </a>
     
-    <a target="_blank" href="https://nav.lisz.me" title="个人导航" class="friendurl">
+    <a target="_blank" href="https://nav.lisz.me" title="个人导航" class="friendurl" rel="nofollow">
         <div class="frienddiv">
             <div class="frienddivleft">
-                <img class="myfriend" src="/assets/icons/default.svg" onerror="this.src='https://cdn-icons-png.flaticon.com/512/2091/2091464.png'; this.removeAttribute('onerror'); this.removeAttribute('onload');"
-                onload="this.removeAttribute('onerror'); this.removeAttribute('onload');">
+                <img class="myfriend" src="/assets/icons/default.svg" onerror="this.src='https://cdn-icons-png.flaticon.com/512/2091/2091464.png'; this.removeAttribute('onerror'); this.removeAttribute('onload');" onload="this.removeAttribute('onerror'); this.removeAttribute('onload');">
             </div>
             <div class="frienddivright">
                 <div class="friendname">个人导航</div>
@@ -148,11 +194,10 @@
 <div class="friends">
     <h2>Friends</h2>
     
-    <a target="_blank" href="https://u.sb/" title="烧饼博客" class="friendurl">
+    <a target="_blank" href="https://u.sb/" title="烧饼博客" class="friendurl" rel="nofollow">
         <div class="frienddiv">
             <div class="frienddivleft">
-                <img class="myfriend" src="https://s3.rsb.net/apple-touch-icon.png" onerror="this.src='https://cdn-icons-png.flaticon.com/512/149/149071.png'; this.removeAttribute('onerror'); this.removeAttribute('onload');"
-  onload="this.removeAttribute('onerror'); this.removeAttribute('onload');">
+                <img class="myfriend" src="https://s3.rsb.net/apple-touch-icon.png" onerror="this.src='https://cdn-icons-png.flaticon.com/512/149/149071.png'; this.removeAttribute('onerror'); this.removeAttribute('onload');" onload="this.removeAttribute('onerror'); this.removeAttribute('onload');">
             </div>
             <div class="frienddivright">
                 <div class="friendname">烧饼博客</div>
@@ -164,7 +209,7 @@
 </div>
 
 
-<hr />
+<hr>
 
 <p>  本站“链接”是个人收藏使用，“朋友们”暂不接受陌生友链申请，目前仅限比较熟悉的朋友交换友链。</p>
 
@@ -186,27 +231,27 @@
     <div class="g-sidebar">
         <section class="author-card">
             <div class="avatar">
-                <img src="" alt="">
+                <img src="/assets/img/profile.webp" alt="">
             </div>
-            <div class="author-name" rel="author"></div>
+            <div class="author-name" rel="author">zhonger</div>
             <div class="bio">
-                <p></p>
+                <p>全栈开发者，热爱前端、运维和架构设计</p>
             </div>
             <div class="level">
                 <div class="level-item">
-                    <p class="heading"></p>
+                    <p class="heading">文章</p>
                     <a href="/archives.html">
                         <p class="title">4</p>
                     </a>
                 </div>
                 <div class="level-item">
-                    <p class="heading"></p>
+                    <p class="heading">类别</p>
                     <a href="/categories.html">
                         <p class="title">2</p>
                     </a>
                 </div>
                 <div class="level-item">
-                    <p class="heading"></p>
+                    <p class="heading">标签</p>
                     <a href="/tags.html">
                         <p class="title">11</p>
                     </a>
@@ -216,43 +261,170 @@
         </section>
 
         
+        
+        
+        <section class="tags-card">
+            <div class="links" rel="links">热门标签</div>
+            
+            
+                
+                    
+                        
+                        
+                        <a href="/tags.html#jekyll" class="tag">jekyll<sup>3</sup></a>
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                    
+                
+                    
+                        
+                        
+                        <a href="/tags.html#%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91" class="tag">前端开发<sup>2</sup></a>
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                    
+                
+                    
+                
+                    
+                        
+                        
+                        <a href="/tags.html#%E8%AE%BE%E8%AE%A1" class="tag">设计<sup>1</sup></a>
+                    
+                
+                    
+                        
+                        
+                        <a href="/tags.html#mathjax" class="tag">mathjax<sup>1</sup></a>
+                    
+                
+                    
+                        
+                        
+                        <a href="/tags.html#theme" class="tag">theme<sup>1</sup></a>
+                    
+                
+                    
+                        
+                        
+                        <a href="/tags.html#blog" class="tag">blog<sup>1</sup></a>
+                    
+                
+                    
+                        
+                        
+                        <a href="/tags.html#ac" class="tag">ac<sup>1</sup></a>
+                    
+                
+                    
+                        
+                        
+                        <a href="/tags.html#develop" class="tag">develop<sup>1</sup></a>
+                    
+                
+                    
+                        
+                        
+                        <a href="/tags.html#%E4%B8%BB%E9%A2%98" class="tag">主题<sup>1</sup></a>
+                    
+                
+                    
+                        
+                        
+                        <a href="/tags.html#%E5%AD%A6%E6%9C%AF" class="tag">学术<sup>1</sup></a>
+                    
+                
+                    
+                        
+                        
+                        <a href="/tags.html#%E8%BF%90%E7%BB%B4" class="tag">运维<sup>1</sup></a>
+                    
+                
+                
+            
+        </section>
+        
 
         
 
         <section class="tags-card">
             
-            <div class="links"></div>
+            <div class="links">最近更新</div>
             <ul class="latest-articles">
                 
                     <li>
                         <p class="latest-title">
-                            <a href="/tech/2021/12/22/new-theme-h2o-ac.html"> H2O-ac theme for Jekyll </a>
+                            <a href="/tech/new-theme-h2o-ac.html"> H2O-ac theme for Jekyll </a>
                         </p>
                         <span class="latest-date">
                             
-                              2021年12月22日
+                              2021-12-22 
                             
                         </span>
                     </li>   
                 
                     <li>
                         <p class="latest-title">
-                            <a href="/test/2017/07/30/mathjax-test.html"> MathJax Test </a>
+                            <a href="/test/mathjax-test.html"> MathJax Test </a>
                         </p>
                         <span class="latest-date">
                             
-                              2017年7月30日
+                              2017-07-30 
                             
                         </span>
                     </li>   
                 
                     <li>
                         <p class="latest-title">
-                            <a href="/2017/04/18/hello-jekyll.html"> Hello Jekyll </a>
+                            <a href="/hello-jekyll.html"> Hello Jekyll </a>
                         </p>
                         <span class="latest-date">
                             
-                              2017年4月18日
+                              2017-04-18 
                             
                         </span>
                     </li>   
@@ -263,6 +435,14 @@
 
     </div>
 
+    
+    <div class="search-card">
+        <input id="search_input" type="text" placeholder="Search..." autocomplete="off">
+        <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-search"></use>
+        </svg>
+        <div class="search_result"></div>
+    </div>
     
 
 </aside>
@@ -278,18 +458,29 @@
   <div class="g-container">
     <div class="g-left">
       <section class="links">
-        
-          
+        本站由 <a href="//jekyllrb.com" target="_blank" class="extlinks">Jekyll</a> 和 (基于 <a href="https://github.com/kaeyleo/jekyll-theme-H2O" target="_blank" class="extlinks">H2O</a> 的) <a href="https://github.com/zhonger/jekyll-theme-H2O-ac" target="_blank" class="extlinks">H2O-ac</a> 强力驱动
+         (<a href="https://github.com/zhonger/jekyll-theme-H2O-ac/releases/tag/v.1.2.1" target="_blank" class="extlinks">v1.2.1</a>)  
         
       </section>
-      <section class="links"> ©
+      <section class="links">Mr Li ©
         
         
-          
+          2015
           -
         
         2023
         
+          <a href="https://beian.miit.gov.cn/" target="_blank" class="extlinks">沪ICP备xxxxxxxx号</a>
+        
+      </section>
+      
+      <section>
+        <span id="busuanzi_container_site_pv">
+          👁️ 总浏览量 <span id="busuanzi_value_site_pv"></span> <b>·</b>
+        </span>
+        <span id="busuanzi_container_site_uv">
+          👤 总访问量 <span id="busuanzi_value_site_uv"></span>
+        </span>
       </section>
       
       <section>
@@ -304,9 +495,9 @@
   </div>
 </footer>
 <div class="cookie-tip">
-   「 <a href=""></a> 」
+   为了提升本站的使用体验和必要功能的正常使用，本站会使用本地 Cookie。详细请查看「 <a href="/tos.html">本站使用条款</a> 」了解更多。
 
-  <button id="accept-tos"></button>
+  <button id="accept-tos">同意</button>
 </div>
 <button id="list" aria-label="Scroll back to top" class="mobile-list" type="button">
   <svg class="icon list day" aria-hidden="true">
@@ -335,6 +526,15 @@
       </div>
     </div>
     
+    <div class="modal">
+        <div class="modal-content">
+          <header>
+            <span class="close">&times;</span>
+          </header>
+          <div class="container"></div>
+        </div>
+    </div>
+    
 
     <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/clipboard/dist/clipboard.min.js"></script>
@@ -348,6 +548,8 @@
     
     
     
+<script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
     <script>
     if ("serviceWorker" in navigator) {
         if (navigator.serviceWorker.controller) {
@@ -380,7 +582,32 @@ refer to:
  - http://docs.mathjax.org/en/latest/options/index.html
 -->
 
-    
+	<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+		jax: ["input/TeX", "output/HTML-CSS"],
+		tex2jax: {
+			inlineMath: [ ["$", "$"] ],
+			displayMath: [ ["$$", "$$"] ],
+			skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+		},
+		"HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"] }
+      });
+    </script>
+
+     
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@9.1.6/dist/mermaid.min.js"></script>
+    <script>
+        $(document).ready(function (){
+            mermaid.initialize({
+                startOnLoad:true,
+                theme: "default",
+            });
+            mermaid.init(undefined, $('.mermaid2'));
+        });
+    </script>
+
     
  
     
