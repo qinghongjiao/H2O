@@ -1,7 +1,7 @@
 # Site settings 配置站点
 title: '青红椒'
-description: '个人导航页面,非博客,引导页面,导航页面'
-keyword: 'QingHongJiao，青红椒，qinghongjiao.cn，qinghongjiao.com,workgroup.pages.dev'
+description: '个人的一个技术博客站点，主要用于记录个人在学习过程中遇到的技术问题及解决方法、技术实验，以及一些比较有趣的事情。'
+keyword: '青红椒，的博客，nodejs，kvm'
 url: 'https://qinghongjiao.cn' # your host
 
 # if you don't need baseurl, you should leave this value blank.
@@ -10,11 +10,11 @@ baseurl: ''
 # Github
 github:
   enabled: true
-  owner: QingHongJiao
-  repository: QingHongJiao.github.io
+  owner: zhonger
+  repository: zhonger.github.io
 
 # Theme
-# theme: jekyll-theme-h2o-ac
+theme: jekyll-theme-h2o-ac
 
 # Gray
 gray: false
@@ -24,6 +24,10 @@ nav:
   home: '/'
   blog: '/blog/index.html'
   archives: '/archives.html'
+  collections: 
+    CONQUEST: '/tags.html#CONQUEST'
+    LDAP: '/tags.html#LDAP'
+    博客: '/tags.html#blog'
   tags: '/tags.html'
   about:
     logs: '/logs.html'
@@ -31,18 +35,17 @@ nav:
     RSS: '/feed.xml'
     CV: '/cv.html'
     links: '/links.html'
-    about: '/about.html'
 
 # Footer
 footer:
   since: 2015
 
 # Author 配置博主信息
-author: 'QingHongJiao'
-nickname: 'QingHongJiao'
-bio: 'QingHongJiao.Com & QingHongJiao.Cn'
-avatar: '/assets/img/profile.jpg'
-favicon: "/favicon.ico"
+author: 'zhonger'
+nickname: 'zhonger'
+bio: 'Developer & Maintainer'
+avatar: '/assets/img/profile.webp'
+favicon: "/assets/icons/favicon.ico"
 
 # permalink
 permalink: /:categories/:title.html
@@ -73,21 +76,18 @@ postPatterns: 'food'
 
 # SNS settings 配置社交网站url: weibo, zhihu, twitter, instagram, juejin, github, douban, facebook, dribble, uicn, jianshu, medium, linkedin
 sns:
-  google-scholar: 'https://scholar.google.com'
-  researchgate: 'https://www.researchgate.net'
-  ORCID: 'https://orcid.org'
-  github: 'https://github.com'
-  linkedin: 'https://www.linkedin.com'
-  segmentfault: 'https://segmentfault.com'
+  google-scholar: 'https://scholar.google.com/citations?user=AUupIooAAAAJ'
+  researchgate: 'https://www.researchgate.net/profile/Shengzhou-Li'
+  ORCID: 'https://orcid.org/0000-0001-6973-3825'
+  github: 'https://github.com/zhonger'
+  linkedin: 'https://www.linkedin.com/in/shengzhouli/'
+  segmentfault: 'https://segmentfault.com/u/wuwozhonger'
 
 # Links 友情链接
 links:
   Fortran 入门: 'https://fortran-tutorial.lisz.me/'
   个人导航: 'https://nav.lisz.me'
   PICTL: 'https://github.com/zhonger/pictl'
- Pages: 'https://QingHongJiao.Cn'
- Pages: 'https://QingHongJiao.Com'
- Pages: 'https://workgroup.pages.dev'
 
 # Beian 备案号
 beian: ''
@@ -101,7 +101,7 @@ cnzz:
 # Umami Analytics
 umami:
   status: true
-  id: 90ea4822-8012-444e-8
+  id: 90ea4822-8012-444e-837a-757ea473e087
   js: https://umami.lisz.top/pwiki.js
 
 # Busuanzi
@@ -112,7 +112,7 @@ busuanzi: true
 google_analytics: G-9E8SEJ5JNY
 
 # Google Search
-google_search: v729JR7Zs4nX-YvgaPeo3p1
+google_search: v729JR7Zs4nX-YvgaPeo3p1ise9vTA-6cMhamSu6N5c
 
 # TZ 时区
 timezone: Asia/Tokyo
