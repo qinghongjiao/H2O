@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="">
+<html lang="zh-Hans">
 
 <head>
     <meta charset="UTF-8">
@@ -21,9 +21,9 @@
     <meta property="og:previous_url" content="/tech/new-theme-h2o.html">
     
     
-    <meta property="post-date-format" content="">
+    <meta property="post-date-format" content="0">
     
-    <meta property="post-date" content="2017年4月18日 00:00:00 +0900" />
+    <meta property="post-date" content="2017-04-18 00:00:00 +0900" />
     
     
     <meta name="alivestart" content="08/08/2015">
@@ -31,7 +31,7 @@
     
     <meta name="google-site-verification" content="v729JR7Zs4nX-YvgaPeo3p1ise9vTA-6cMhamSu6N5c" />
     
-    <meta name="theme-color" content="" />
+    <meta name="theme-color" content="#81BBFF" />
     <link rel="manifest" href="/manifest.json" />
     <link rel="apple-touch-icon" href="/assets/img/touch/apple-touch-icon.png"/>
     <link rel="Shortcut Icon" href="/assets/icons/favicon.ico">
@@ -44,7 +44,7 @@
     
     
     
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prism-themes@1.9.0/themes/prism-.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prism-themes@1.9.0/themes/prism-one-light.min.css" />
     
     
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.28.0/plugins/line-numbers/prism-line-numbers.min.css">
@@ -69,10 +69,10 @@
   <div id="all" class="post" data-theme="default">
   
     <div class="alert-tip" id="no-previous">
-      
+      已经是最新一篇文章了！
     </div>
     <div class="alert-tip" id="no-next">
-      
+      已经是最后一篇文章了！
     </div>
     <input id="nm-switch" type="hidden" value="false"> <header class="g-header" data-theme="default">
     <div class="g-logo">
@@ -131,6 +131,12 @@
                     <ul class="dropdown-menu">
                     
                         <li>
+                            <a href="/feed.xml" aria-label="RSS">
+                                RSS
+                            </a>
+                        </li>
+                    
+                        <li>
                             <a href="/logs.html" aria-label="logs">
                                 logs
                             </a>
@@ -139,12 +145,6 @@
                         <li>
                             <a href="/tos.html" aria-label="tos">
                                 tos
-                            </a>
-                        </li>
-                    
-                        <li>
-                            <a href="/feed.xml" aria-label="RSS">
-                                RSS
                             </a>
                         </li>
                     
@@ -220,20 +220,20 @@
                 <use xlink:href="#icon-words"></use>
               </svg>
               
-                941  
+              本文总共  941  字
             </span>
             <span class="post-meta-item">
               <svg class="icon time" aria-hidden="true">
                 <use xlink:href="#icon-time"></use>
               </svg>
-               3 
+              阅读全文大约需要 3 分钟
             </span>
             
               <span class="post-meta-item">
                 <svg class="icon pv" aria-hidden="true">
                   <use xlink:href="#icon-pv"></use>
                 </svg>
-                 <span id="busuanzi_value_page_pv"></span> 
+                本文总阅读量 <span id="busuanzi_value_page_pv"></span> 次
               </span>
             
             
@@ -246,9 +246,11 @@
 
       
       
-        <article class="markdown-body">
-          
-          <blockquote>
+      <div class="container">  
+        <div class="contents">
+          <article class="markdown-body post">
+              
+            <blockquote>
   <p>Transform your plain text into static websites and blogs.</p>
 </blockquote>
 
@@ -258,7 +260,7 @@
 
 <h3 id="so-what-is-jekyll-exactlypermalink">So what is Jekyll, exactly?Permalink</h3>
 
-<p>Jekyll is a simple, blog-aware, static site generator. It takes a template directory containing raw text files in various formats, runs it through a converter (like <a href="https://daringfireball.net/projects/markdown/">Markdown</a>) and our <a href="https://github.com/Shopify/liquid/wiki">Liquid</a> renderer, and spits out a complete, ready-to-publish static website suitable for serving with your favorite web server. Jekyll also happens to be the engine behind GitHub Pages, which means you can use Jekyll to host your project’s page, blog, or website from GitHub’s servers for free.</p>
+<p>Jekyll is a simple, blog-aware, static site generator. It takes a template directory containing raw text files in various formats, runs it through a converter (like <a href="https://daringfireball.net/projects/markdown/" rel="nofollow" target="_blank" class="extlinks">Markdown</a>) and our <a href="https://github.com/Shopify/liquid/wiki" rel="nofollow" target="_blank" class="extlinks">Liquid</a> renderer, and spits out a complete, ready-to-publish static website suitable for serving with your favorite web server. Jekyll also happens to be the engine behind GitHub Pages, which means you can use Jekyll to host your project’s page, blog, or website from GitHub’s servers for free.</p>
 
 <h3 id="helpful-hintspermalink">Helpful HintsPermalink</h3>
 
@@ -268,26 +270,31 @@
 
 <iframe type="text/html" width="100%" height="385" src="https://www.youtube.com/embed/gfmjMWjn-Xg" frameborder="0"></iframe>
 
-          <div class="post-copyright">
-            
-            <p>
-              <span>：</span>
-              
-              <a href="https://qinghongjiao.cn" class="cplink">青红椒</a>
-              
-            </p>
-            
-              <p> 
-                
-                <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" class="extlinks">CC BY-NC-SA 4.0</a> 
-                
+            <div class="post-copyright">
+              <p>
+                <span>版权声明：</span>
+                如无特别声明，本文版权归
+                <a href="https://qinghongjiao.cn" class="cplink">青红椒</a>
+                所有，转载请注明本文链接。 
               </p>
-            
-            <p><span>：</span>《 Hello Jekyll 》</p>
-            <p><span>：</span><a href="https://qinghongjiao.cn/hello-jekyll.html" class="cplink">https://qinghongjiao.cn/hello-jekyll.html</a></p>
-            <p class="tips"> <span></span> </p>
-          </div>
-        </article>
+              
+                <p> 
+                  （采用 
+                  <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" class="extlinks">CC BY-NC-SA 4.0</a> 
+                  许可协议进行授权）
+                </p>
+              
+              <p><span>本文标题：</span>《 Hello Jekyll 》</p>
+              <p><span>本文链接：</span><a href="https://qinghongjiao.cn/hello-jekyll.html" class="cplink">https://qinghongjiao.cn/hello-jekyll.html</a></p>
+              <p class="tips">本文最后一次更新为 <span></span> 天前，文章中的某些内容可能已过时！</p>
+            </div>
+          </article>
+        </div>   
+        <div class="table-of-contents">
+          <h2>目录</h2>
+          <ul><li><a onclick="scrollToAdjust('welcome')">Welcome</a></li><li><a onclick="scrollToAdjust('so-what-is-jekyll,-exactly?permalink')">So what is Jekyll, exactly?Permalink</a></li><li><a onclick="scrollToAdjust('helpful-hintspermalink')">Helpful HintsPermalink</a></li><li><a onclick="scrollToAdjust('video-test')">Video Test</a></li></ul>
+        </div>
+      </div>
       
 
       
@@ -391,8 +398,8 @@
   <div class="g-container">
     <div class="g-left">
       <section class="links">
-        
-          
+        本站由 <a href="//jekyllrb.com" target="_blank" class="extlinks">Jekyll</a> 和 (基于 <a href="https://github.com/kaeyleo/jekyll-theme-H2O" target="_blank" class="extlinks">H2O</a> 的) <a href="https://github.com/zhonger/jekyll-theme-H2O-ac" target="_blank" class="extlinks">H2O-ac</a> 强力驱动
+         (<a href="https://github.com/zhonger/jekyll-theme-H2O-ac/releases/tag/v.1.2.1" target="_blank" class="extlinks">v1.2.1</a>)  
         
       </section>
       <section class="links">青红椒 ©
@@ -409,20 +416,20 @@
       
       <section>
         <span id="busuanzi_container_site_pv">
-          👁️  <span id="busuanzi_value_site_pv"></span> <b>·</b>
+          👁️ 总浏览量 <span id="busuanzi_value_site_pv"></span> <b>·</b>
         </span>
         <span id="busuanzi_container_site_uv">
-          👤  <span id="busuanzi_value_site_uv"></span>
+          👤 总访问量 <span id="busuanzi_value_site_uv"></span>
         </span>
       </section>
       
       <section>
         
-           
-          <span class="alivetime_days"></span> 
-          <span class="alivetime_hours"></span> 
-          <span class="alivetime_minutes"></span> 
-          <span class="alivetime_seconds"></span> 
+          本站已运行 
+          <span class="alivetime_days"></span> 天
+          <span class="alivetime_hours"></span> 小时
+          <span class="alivetime_minutes"></span> 分
+          <span class="alivetime_seconds"></span> 秒
         
       </section>
     </div>
@@ -452,9 +459,9 @@
   </div>
 </footer>
 <div class="cookie-tip">
-   「 <a href=""></a> 」
+   为了提升本站的使用体验和必要功能的正常使用，本站会使用本地 Cookie。详细请查看「 <a href="/tos.html">本站使用条款</a> 」了解更多。
 
-  <button id="accept-tos"></button>
+  <button id="accept-tos">同意</button>
 </div>
 <button id="list" aria-label="Scroll back to top" class="mobile-list" type="button">
   <svg class="icon list day" aria-hidden="true">
