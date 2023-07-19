@@ -102,12 +102,12 @@ postPatterns: 'circuitBoard'
 # SNS settings 配置社交网站
 # url: email, weibo, zhihu, twitter, instagram, juejin, github, douban, facebook, dribble, uicn, jianshu, medium, linkedin
 sns:
-  # google-scholar: 'https://scholar.google.com'
-  # researchgate: 'https://www.researchgate.net'
-  # ORCID: 'https://orcid.org'
-  # github: 'https://github.com'
-  # linkedin: 'https://www.linkedin.com'
-  # segmentfault: 'https://segmentfault.com'
+  google-scholar: 'https://scholar.google.com'
+  researchgate: 'https://www.researchgate.net'
+  ORCID: 'https://orcid.org'
+  github: 'https://github.com'
+  linkedin: 'https://www.linkedin.com'
+  segmentfault: 'https://segmentfault.com'
 
 # Links 友情链接
 links:
