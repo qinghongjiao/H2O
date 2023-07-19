@@ -2,7 +2,6 @@
 layout: page
 home-title: Hone
 description: 空白的首页
-cover: 'https://i.lisz.top/cover/DGGmJW.webp'
 permalink: /index.html
 lang: "zh-Hans"
 ---
