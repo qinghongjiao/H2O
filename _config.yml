@@ -14,7 +14,7 @@ github:
   repository: QingHongJiao.github.io
 
 # Theme
-theme: jekyll-theme-h2o-ac
+# theme: jekyll-theme-h2o-ac
 
 # Gray
 gray: false
@@ -40,7 +40,7 @@ footer:
 # Author 配置博主信息
 author: 'QingHongJiao'
 nickname: 'QingHongJiao'
-bio: '导航 & QingHongJiao'
+bio: 'QingHongJiao.Com & QingHongJiao.Cn'
 avatar: '/assets/img/profile.jpg'
 favicon: "/favicon.ico"
 
@@ -85,6 +85,9 @@ links:
   Fortran 入门: 'https://fortran-tutorial.lisz.me/'
   个人导航: 'https://nav.lisz.me'
   PICTL: 'https://github.com/zhonger/pictl'
+ Pages: 'https://QingHongJiao.Cn'
+ Pages: 'https://QingHongJiao.Com'
+ Pages: 'https://workgroup.pages.dev'
 
 # Beian 备案号
 beian: ''
