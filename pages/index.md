@@ -3,6 +3,9 @@ layout: page
 home-title: Hone
 description: 空白的首页
 permalink: /index.html
+cover: 'https://i.lisz.top/cover/DGGmJW.webp'
+cover_author: 'Peter F'
+cover_author_link: 'https://unsplash.com/@peterf'
 langs: ["zh-Hans"]
 lang: "zh-Hans"
 ---
