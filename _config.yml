@@ -27,6 +27,9 @@ github:
   owner: qinghongjiao
   repository: qinghongjiao.github.io
 
+# Theme
+theme: jekyll-theme-h2o-ac
+
 # PWA
 pwa:
   color: '#81BBFF'
