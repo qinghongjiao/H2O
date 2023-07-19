@@ -10,8 +10,8 @@ baseurl: ''
 # Github
 github:
   enabled: true
-  owner: zhonger
-  repository: zhonger.github.io
+  owner: qinghongjiao
+  repository: qinghongjiao.github.io
 
 # Theme
 theme: jekyll-theme-h2o-ac
@@ -24,10 +24,6 @@ nav:
   home: '/'
   blog: '/blog/index.html'
   archives: '/archives.html'
-  collections: 
-    CONQUEST: '/tags.html#CONQUEST'
-    LDAP: '/tags.html#LDAP'
-    博客: '/tags.html#blog'
   tags: '/tags.html'
   about:
     logs: '/logs.html'
@@ -35,15 +31,16 @@ nav:
     RSS: '/feed.xml'
     CV: '/cv.html'
     links: '/links.html'
+    about: '/about.html'
 
 # Footer
 footer:
   since: 2015
 
 # Author 配置博主信息
-author: 'zhonger'
-nickname: 'zhonger'
-bio: 'Developer & Maintainer'
+author: 'qinghongjiao'
+nickname: '青红椒'
+bio: 'QingHongJiao.Cn & QingHongJiao.Com'
 avatar: '/assets/img/profile.webp'
 favicon: "/assets/icons/favicon.ico"
 
@@ -88,6 +85,10 @@ links:
   Fortran 入门: 'https://fortran-tutorial.lisz.me/'
   个人导航: 'https://nav.lisz.me'
   PICTL: 'https://github.com/zhonger/pictl'
+  Pages: 'https://qinghongjiao.cn'
+  Pages: 'https://qinghongjiao.com'
+  Pages: 'https://workgroup.pages.dev'
+  Pages: 'https://username.pages.dev'
 
 # Beian 备案号
 beian: ''
