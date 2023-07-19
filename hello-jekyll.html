@@ -5,17 +5,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello Jekyll - Mr Li</title>
-    <meta name="author"  content="zhonger">
+    <title>Hello Jekyll - 青红椒</title>
+    <meta name="author"  content="QingHongJiao">
     <meta name="description" content="Hello Jekyll">
     <meta name="keywords"  content="jekyll">
     <!-- Open Graph -->
-    <meta property="og:title" content="Hello Jekyll - Mr Li">
+    <meta property="og:title" content="Hello Jekyll - 青红椒">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://qinghongjiao.cn/hello-jekyll.html">
     <meta property="og:baseurl" content="">
     <meta property="og:description" content="个人的一个技术博客站点，主要用于记录个人在学习过程中遇到的技术问题及解决方法、技术实验，以及一些比较有趣的事情。">
-    <meta property="og:site_name" content="Mr Li">
+    <meta property="og:site_name" content="青红椒">
     <meta property="og:gray" content="false">
     
     <meta property="og:previous_url" content="/tech/new-theme-h2o.html">
@@ -30,9 +30,9 @@
     <meta name="theme-color" content="#81BBFF" />
     <link rel="manifest" href="/manifest.json" />
     <link rel="apple-touch-icon" href="/assets/img/touch/apple-touch-icon.png"/>
-    <link rel="Shortcut Icon" href="/favicon.ico">
-    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-    <link rel="bookmark" href="/favicon.ico" type="image/x-icon" />
+    <link rel="Shortcut Icon" href="/assets/icons/favicon.ico">
+    <link rel="icon" href="/assets/icons/favicon.ico" type="image/x-icon" />
+    <link rel="bookmark" href="/assets/icons/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-screen-webfont@1.1.0/style.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@5.2.0/github-markdown-light.min.css">
@@ -127,8 +127,38 @@
                     <ul class="dropdown-menu">
                     
                         <li>
+                            <a href="/logs.html" aria-label="logs">
+                                logs
+                            </a>
+                        </li>
+                    
+                        <li>
+                            <a href="/tos.html" aria-label="tos">
+                                tos
+                            </a>
+                        </li>
+                    
+                        <li>
                             <a href="/feed.xml" aria-label="RSS">
                                 RSS
+                            </a>
+                        </li>
+                    
+                        <li>
+                            <a href="/cv.html" aria-label="CV">
+                                CV
+                            </a>
+                        </li>
+                    
+                        <li>
+                            <a href="/links.html" aria-label="links">
+                                links
+                            </a>
+                        </li>
+                    
+                        <li>
+                            <a href="/about.html" aria-label="about">
+                                about
                             </a>
                         </li>
                     
@@ -240,7 +270,7 @@
               <p>
                 <span>版权声明：</span>
                 如无特别声明，本文版权归
-                <a href="https://qinghongjiao.cn" class="cplink">Mr Li</a>
+                <a href="https://qinghongjiao.cn" class="cplink">青红椒</a>
                 所有，转载请注明本文链接。 
               </p>
               
@@ -273,11 +303,11 @@
     <section class="author-detail">
       <section class="post-footer-item author-card">
         <div class="avatar">
-          <img src="/assets/img/profile.webp" alt="">
+          <img src="/assets/img/profile.jpg" alt="">
         </div>
-        <div class="author-name" rel="author">zhonger</div>
+        <div class="author-name" rel="author">QingHongJiao</div>
         <div class="bio">
-          <p>全栈开发者，热爱前端、运维和架构设计</p>
+          <p>QingHongJiao.Cn & QingHongJiao.Com</p>
         </div>
         
       </section>
@@ -316,7 +346,7 @@
          (<a href="https://github.com/zhonger/jekyll-theme-H2O-ac/releases/tag/v.1.2.1" target="_blank" class="extlinks">v1.2.1</a>)  
         
       </section>
-      <section class="links">Mr Li ©
+      <section class="links">青红椒 ©
         
         
           2015
@@ -505,7 +535,7 @@
 
           $(".post time span.create-at").html(local_post_date["date"]);
 
-          fetch("https://api.github.com/repos/zhonger/jekyll-theme-H2O-ac/commits?path=_posts/2017-04-18-hello-jekyll.md")
+          fetch("https://api.github.com/repos/qinghongjiao/qinghongjiao.github.io/commits?path=_posts/2017-04-18-hello-jekyll.md")
           .then((response) => {
             return response.json();
           })
