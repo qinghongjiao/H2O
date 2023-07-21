@@ -12,18 +12,18 @@
     <meta property="og:title" content="青红椒">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://qinghongjiao.cn/404">
-    <meta property="og:baseurl" content="">
+    <meta property="og:baseurl" content="/posts">
     <meta property="og:description" content="个人的一个技术博客站点，主要用于记录个人在学习过程中遇到的技术问题及解决方法、技术实验，以及一些比较有趣的事情。">
     <meta property="og:site_name" content="青红椒">
     <meta property="og:gray" content="false">
     
     
     <meta name="theme-color" content="#81BBFF" />
-    <link rel="manifest" href="/manifest.json" />
-    <link rel="apple-touch-icon" href="/assets/img/touch/apple-touch-icon.png" />
-    <link rel="Shortcut Icon" href="/assets/icons/favicon.ico">
-    <link rel="icon" href="/assets/icons/favicon.ico" type="image/x-icon" />
-    <link rel="bookmark" href="/assets/icons/favicon.ico" type="image/x-icon" />
+    <link rel="manifest" href="/posts/manifest.json" />
+    <link rel="apple-touch-icon" href="/posts/assets/img/touch/apple-touch-icon.png" />
+    <link rel="Shortcut Icon" href="/posts/assets/icons/favicon.ico">
+    <link rel="icon" href="/posts/assets/icons/favicon.ico" type="image/x-icon" />
+    <link rel="bookmark" href="/posts/assets/icons/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.min.css" async>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-screen-webfont@1.1.0/style.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@5.2.0/github-markdown-light.min.css">
@@ -37,7 +37,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.28.0/plugins/line-numbers/prism-line-numbers.min.css">
     
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@waline/client/dist/waline.css" />
-    <link rel="stylesheet" href="/assets/css/app.min.css">
+    <link rel="stylesheet" href="/posts/assets/css/app.min.css">
     <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
 </head>
 
@@ -55,7 +55,7 @@
       <div class="visible">
         <header class="g-header" data-theme="default">
     <div class="g-logo">
-      <a href="/" aria-label="logo"></a>
+      <a href="/posts/" aria-label="logo"></a>
     </div>
     <!-- <i id="menu-toggle" class="iconfont icon-menu"></i> -->
     <div id="mode-toggle">
@@ -74,7 +74,7 @@
             
                 
                 <li>
-                    <a href="/" aria-label="home">
+                    <a href="/posts/" aria-label="home">
                         home
                     </a>
                 </li>
@@ -82,7 +82,7 @@
             
                 
                 <li>
-                    <a href="/blog/index.html" aria-label="blog">
+                    <a href="/posts/blog/index.html" aria-label="blog">
                         blog
                     </a>
                 </li>
@@ -90,7 +90,7 @@
             
                 
                 <li>
-                    <a href="/archives.html" aria-label="archives">
+                    <a href="/posts/archives.html" aria-label="archives">
                         archives
                     </a>
                 </li>
@@ -98,7 +98,7 @@
             
                 
                 <li>
-                    <a href="/tags.html" aria-label="tags">
+                    <a href="/posts/tags.html" aria-label="tags">
                         tags
                     </a>
                 </li>
@@ -110,19 +110,19 @@
                     <ul class="dropdown-menu">
                     
                         <li>
-                            <a href="/feed.xml" aria-label="RSS">
+                            <a href="/posts/feed.xml" aria-label="RSS">
                                 RSS
                             </a>
                         </li>
                     
                         <li>
-                            <a href="/links.html" aria-label="links">
+                            <a href="/posts/links.html" aria-label="links">
                                 links
                             </a>
                         </li>
                     
                         <li>
-                            <a href="/about.html" aria-label="about">
+                            <a href="/posts/about.html" aria-label="about">
                                 about
                             </a>
                         </li>
@@ -170,7 +170,7 @@
     <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-core.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/line-numbers/prism-line-numbers.min.js"></script>
-    <script src="/assets/js/app.min.js"></script>
+    <script src="/posts/assets/js/app.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js" async></script>
     <script src="https://at.alicdn.com/t/font_3046306_skfh9jzzbbf.js"></script>
     
@@ -186,8 +186,8 @@
         } else {
             // Register the service worker
             navigator.serviceWorker
-            .register("/sw.js", {
-                scope: "/"
+            .register("/posts/sw.js", {
+                scope: "/posts/"
             })
             .then(function (reg) {
                 console.log("Service worker has been registered for scope: " + reg.scope);
@@ -197,7 +197,7 @@
 
 // 检测浏览器是否支持SW
 // if(navigator.serviceWorker != null){
-//     navigator.serviceWorker.register("/sw.js")
+//     navigator.serviceWorker.register("/posts/sw.js")
 //         .then(function(registartion){
 //             console.log('支持sw:',registartion.scope)
 //         })
